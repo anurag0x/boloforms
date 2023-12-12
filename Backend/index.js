@@ -20,7 +20,7 @@ app.use('/',(req,res)=>{
 app.listen('8080',async ()=>{
     console.log('server started');
     try {
-        mongoose.connect(process.env.MONGODB_URL)
+        mongoose.connect("mongodb+srv://anurag:<password>@cluster0.mwf7h6h.mongodb.net/boloforms")
         console.log('database connection established')
     } catch (error) {
         console.log('error while connecting database ',error);
