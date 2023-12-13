@@ -29,39 +29,9 @@ function Preview() {
   }
 
   async function handleSubmit() {
-    // lopping the data and taking only required parameters
-    // let questions = [];
-    // data.questions.forEach((el) => {
-    //   if (el.type == "Categorize") {
-    //     questions.push({
-    //       type: el.type,
-    //       items: el.items,
-    //     });
-    //   } else if (el.type == "Cloze") {
-    //     let obj = { question: el.question, type: el.type };
-    //     if (el.answer) {
-    //       obj.answer = el.answer;
-    //     }
-    //     questions.push(obj);
-    //   } else {
-    //     questions.push({
-    //       type: el.type,
-    //       passage: el.passage,
-    //       mcq: el.questions,
-    //     });
-    //   }
-    // });
-
-    // // post method
-    // try {
-    //   let res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/response`, {
-    //     "formId":data._id,
-    //     "questions":questions
-    //   });
+  
     messageOnOpen();
-    // } catch (error) {
-    //   console.log(error.message, "error");
-    // }
+  
   }
 
   useEffect(() => {
